@@ -26,7 +26,6 @@ class Category(models.Model):
     # 클래스 생성 시 자동으로 id라는 PrimaryKey가 생성
     name = models.CharField(max_length=10)
     movies = models.ManyToManyField(Movie, related_name='categories')
-    # Movie 클래스와 Category 클래스의 movies속성 간 M-N 관계설정이 되어 있음.
 
 class User(models.Model):
     # 클래스 생성 시 자동으로 id라는 PrimaryKey가 생성
